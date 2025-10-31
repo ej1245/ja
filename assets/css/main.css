@@ -120,6 +120,7 @@ input, select, textarea {
     font-style: normal;
     line-height: 130%;
     font-size: large;
+    max-width: 100rem;
 		}
 
 /* Type */
