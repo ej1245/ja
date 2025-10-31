@@ -118,6 +118,8 @@ input, select, textarea {
     -ms-transition: none !important;
     transition: none !important;
     font-style: normal;
+    line-height: 130%;
+    font-size: large;
 		}
 
 /* Type */
@@ -155,12 +157,12 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-    font-family: "Merriweather", Georgia, serif;
+    font-family: "Aboreto Regular";
     font-weight: 300;
     font-size: 1rem;
     line-height: 2.375;
-    text-align: center;
     font-style: normal;
+    text-align: center;
 	}
 
 	a {
@@ -3511,33 +3513,32 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		color: #ffffff;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-justify-content: -moz-flex-end;
-		-webkit-justify-content: -webkit-flex-end;
-		-ms-justify-content: -ms-flex-end;
-		justify-content: flex-end;
-		pointer-events: none;
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		height: 20rem;
-		padding-bottom: 8rem;
-		position: relative;
-		text-align: center;
-		z-index: 2;
+    color: #ffffff;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: -moz-flex-end;
+    -webkit-justify-content: -webkit-flex-end;
+    -ms-justify-content: -ms-flex-end;
+    justify-content: flex-end;
+    pointer-events: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 20rem;
+    padding-bottom: 8rem;
+    position: relative;
+    z-index: 2;
 	}
 
 		#header input, #header select, #header textarea {
