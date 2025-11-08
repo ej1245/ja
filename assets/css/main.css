@@ -26,8 +26,9 @@ section, summary, time, mark, audio, video {
     padding: 0;
     border: 100%;
     font-size: 100%;
-    font: inherit;
+    font-family: inherit;
     vertical-align: baseline;
+    line-height: normal;
 }
 
 article, aside, details, figcaption, figure,
@@ -117,7 +118,7 @@ input, select, textarea {
     -ms-transition: none !important;
     transition: none !important;
     font-style: normal;
-    line-height: 130%;
+    line-height: 150%;
     font-size: medium;
     max-width: 100rem;
     color: #0C0C0D;
