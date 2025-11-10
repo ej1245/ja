@@ -318,10 +318,65 @@ a:hover {
     <img src="images/before_after6.webp" loading="lazy" class="image fit" alt="Restored hair before and after">
 </a>
 
-<div class="embed-responsive">
-	 <iframe width="90%" height="90%" src="https://www.youtube.com/embed/bwpkJ5rwW7s?si=Dy6e2VCOx8_7H9PJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>alt="Jess Abolt Finest Hair Studio"</iframe>
-		</div> </article> 
-	 	            
+<div class="embed-responsive youtube" data-embed="bwpkJ5rwW7s" role="button" aria-label="Play video: Jess Abolt Finest Hair Studio">
+  <div class="play-button"></div>
+</div>
+</article>
+
+<style>
+.youtube {
+  position: relative;
+  width: 90%;
+  padding-bottom: 50.6%; /* 16:9 ratio */
+  margin: 0 auto;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.youtube .play-button {
+  width: 68px;
+  height: 48px;
+  background: url('https://img.icons8.com/ios-filled/100/ffffff/play--v1.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+.youtube:hover .play-button {
+  opacity: 1;
+}
+</style>
+
+<script defer>
+document.addEventListener("DOMContentLoaded", function() {
+  const ytDivs = document.querySelectorAll(".youtube");
+  ytDivs.forEach(div => {
+    const id = div.dataset.embed;
+    // Set thumbnail image
+    div.style.backgroundImage = `url(https://img.youtube.com/vi/${id}/hqdefault.jpg)`;
+    // Load iframe on click
+    div.addEventListener("click", function() {
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+      iframe.title = "Jess Abolt Finest Hair Studio";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.frameBorder = "0";
+      this.replaceWith(iframe);
+    });
+  });
+});
+</script>
+
     </header>
    <div class="embed-responsive-item">
     <img src="Kenra.jpg" class="image fit" alt="Finest hair salon products">
