@@ -312,30 +312,36 @@ a:hover {
 								
     </article>
 	<article>
-	  <h2>Complete Hair Restyling </h2>
-	  </header>
-	 <a href="destination-page.html" aria-label="View restored hair project details">
-    <img src="images/before_after6.webp" loading="lazy" class="image fit" alt="Restored hair before and after">
+	 <h2>Complete Hair Restyling</h2>
+</header>
+
+<a href="destination-page.html" aria-label="View restored hair project details">
+  <img src="images/before_after6.webp" loading="lazy" class="image fit" alt="Restored hair before and after">
 </a>
 
-<div class="embed-responsive youtube" data-embed="bwpkJ5rwW7s" role="button" aria-label="Play video: Jess Abolt Finest Hair Studio">
+<div class="youtube" data-embed="bwpkJ5rwW7s" role="button" aria-label="Play video: Jess Abolt Finest Hair Studio">
   <div class="play-button"></div>
 </div>
+
 </article>
 
 <style>
+/* Keeps video neatly inside its frame */
 .youtube {
   position: relative;
   width: 90%;
-  padding-bottom: 50.6%; /* 16:9 ratio */
-  margin: 0 auto;
+  max-width: 800px;       /* optional: limits max size */
+  aspect-ratio: 16 / 9;   /* prevents height jumps */
+  margin: 1rem auto;
   background-color: #000;
   background-position: center;
   background-size: cover;
-  cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
+  cursor: pointer;
 }
+
+/* Thumbnail play button */
 .youtube .play-button {
   width: 68px;
   height: 48px;
@@ -347,9 +353,22 @@ a:hover {
   transform: translate(-50%, -50%);
   opacity: 0.85;
   transition: opacity 0.3s;
+  z-index: 2;
 }
+
 .youtube:hover .play-button {
   opacity: 1;
+}
+
+/* Ensure iframe fills container and stays put */
+.youtube iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  z-index: 1;
 }
 </style>
 
@@ -358,24 +377,38 @@ document.addEventListener("DOMContentLoaded", function() {
   const ytDivs = document.querySelectorAll(".youtube");
   ytDivs.forEach(div => {
     const id = div.dataset.embed;
-    // Set thumbnail image
+    if (!id) return;
+
+    // Show YouTube thumbnail
     div.style.backgroundImage = `url(https://img.youtube.com/vi/${id}/hqdefault.jpg)`;
-    // Load iframe on click
-    div.addEventListener("click", function() {
+
+    // When clicked, load the iframe INSIDE container
+    div.addEventListener("click", function loadIframe() {
+      if (div.classList.contains("loaded")) return;
+
       const iframe = document.createElement("iframe");
       iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
-      iframe.title = "Jess Abolt Finest Hair Studio";
-      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-      iframe.allowFullscreen = true;
+      iframe.title = div.getAttribute("aria-label") || "YouTube video player";
+      iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
       iframe.referrerPolicy = "strict-origin-when-cross-origin";
-      iframe.style.width = "100%";
-      iframe.style.height = "100%";
-      iframe.frameBorder = "0";
-      this.replaceWith(iframe);
+      iframe.allowFullscreen = true;
+
+      // Append iframe inside .youtube instead of replacing it
+      div.appendChild(iframe);
+      div.classList.add("loaded");
+
+      // Remove play button after load
+      const pb = div.querySelector(".play-button");
+      if (pb) pb.remove();
+
+      // Remove click listener
+      div.removeEventListener("click", loadIframe);
     });
   });
 });
 </script>
+
 
     </header>
    <div class="embed-responsive-item">
