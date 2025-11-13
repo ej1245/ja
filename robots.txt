@@ -1,4 +1,4 @@
  User-agent: *
     Allow: /
 
-Sitemap: https://jessabolthair.com/sitemap.xml
+Sitemap: https://www.jessabolthair.com/sitemap.xml
