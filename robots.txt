@@ -1,4 +1,4 @@
- User-agent: *
-    Allow: /
+User-agent: *
+Disallow:
 
 Sitemap: https://www.jessabolthair.com/sitemap.xml
