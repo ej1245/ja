@@ -6,37 +6,37 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>https://www.jessabolthair.com/hair-salon-rochester-mn/</loc>
-  <lastmod>2025-11-23T15:59:45+00:00</lastmod>
+  <lastmod>2025-11-24T23:15:59+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.jessabolthair.com/gallery/</loc>
-  <lastmod>2025-11-23T15:59:45+00:00</lastmod>
+  <lastmod>2025-11-24T23:15:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.jessabolthair.com/about-me/</loc>
-  <lastmod>2025-11-23T15:59:45+00:00</lastmod>
+  <lastmod>2025-11-24T23:16:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.jessabolthair.com/hair-tips/</loc>
-  <lastmod>2025-11-23T15:59:45+00:00</lastmod>
+  <lastmod>2025-11-24T23:16:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.jessabolthair.com/location/</loc>
-  <lastmod>2025-11-23T15:59:45+00:00</lastmod>
+  <lastmod>2025-11-24T23:16:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.jessabolthair.com/</loc>
-  <lastmod>2025-11-23T15:59:45+00:00</lastmod>
-  <priority>00.50</priority>
+  <lastmod>2025-11-24T23:15:59+00:00</lastmod>
+  <priority>0.50</priority>
 </url>
 
+
 </urlset>
-
-
