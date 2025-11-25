@@ -4765,3 +4765,6 @@ input, select, textarea {
   padding: 20px;
   clear: both;
 }
+html {
+  scroll-behavior: smooth;
+}
