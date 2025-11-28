@@ -8,34 +8,35 @@
   <!-- Main SEO page -->
   <url>
     <loc>https://www.jessabolthair.com/hair-salon-rochester-mn/</loc>
-    <lastmod>2023-11-28T03:02:00-06:00</lastmod>
+    <lastmod>2025-11-28T03:02:00-06:00</lastmod>
     <priority>1.00</priority>
   </url>
 
   <!-- Other indexable pages -->
   <url>
     <loc>https://www.jessabolthair.com/gallery/</loc>
-    <lastmod>22023-11-28T03:02:00-06:00</lastmod>
+    <lastmod>2025-11-28T03:02:00-06:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://www.jessabolthair.com/about-me/</loc>
-    <lastmod>2023-11-28T03:02:00-06:00</lastmod>
+    <lastmod>2025-11-28T03:02:00-06:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://www.jessabolthair.com/hair-tips/</loc>
-    <lastmod>2023-11-28T03:02:00-06:00</lastmod>
+    <lastmod>2025-11-28T03:02:00-06:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://www.jessabolthair.com/location/</loc>
-    <lastmod>2023-11-28T03:02:00-06:00</lastmod>
+    <lastmod>2025-11-28T03:02:00-06:00</lastmod>
     <priority>0.80</priority>
   </url>
 
 </urlset>
+
 
