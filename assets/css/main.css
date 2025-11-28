@@ -3427,10 +3427,12 @@ input, select, textarea {
 		}
 
 		#intro p {
-			font-size: 1.25rem;
-			font-style: italic;
-			margin-top: -0.25rem;
-			text-align: center;
+    font-size: x-large;
+    font-style: normal;
+    margin-top: -0.25rem;
+    text-align: center;
+    font-family: "Aboreto Regular";
+    text-transform: none;
 		}
 
 		#intro + #header {
