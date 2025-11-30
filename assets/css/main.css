@@ -125,7 +125,8 @@ input, select, textarea {
     font-size: 22px;
     max-width: 100rem;
     color: #0C0C0D;
-    font-family: "Aboreto Regular";
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    text-transform: capitalize;
 		}
 .is-preload .embed-responsive-item .embed-responsive.embed-responsive {
     width: 70%;
@@ -198,8 +199,9 @@ input, select, textarea {
 	}
 
 	p {
-		text-align: justify;
-		margin: 0 0 2rem 0;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    font-size: large;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3810,7 +3812,10 @@ input, select, textarea {
 		}
 
 			#main > *:first-child {
-				border-top: 0;
+    border-top: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
 			}
 
 		#main > footer {
