@@ -231,6 +231,174 @@ gtag('config', 'G-1NRK79NW04');
  
 
 
+<style>
+      /* Keeps video neatly inside its frame */
+.youtube {
+  position: relative;
+  width: 90%;
+  max-width: 800px;       /* optional: limits max size */
+  aspect-ratio: 16 / 9;   /* prevents height jumps */
+  margin: 1rem auto;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Thumbnail play button */
+.youtube .play-button {
+  width: 68px;
+  height: 48px;
+  background: url('https://img.icons8.com/ios-filled/100/ffffff/play--v1.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.youtube:hover .play-button {
+  opacity: 1;
+}
+
+/* Ensure iframe fills container and stays put */
+.youtube iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  z-index: 1;
+}
+     </style>
+<style>
+     .testimonial-section {
+    background: transparent;
+    color: #fff;
+    padding: 4rem 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    position: relative;
+  }
+
+  .testimonial-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+  }
+
+  .testimonial-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .testimonial-track-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .testimonial-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    will-change: transform;
+  }
+
+  .testimonial-review {
+    flex: 0 0 calc(100% / 3);
+    box-sizing: border-box;
+    padding: 1.5rem;
+    text-align: center;
+    color: #d1d5db;
+  }
+
+  .testimonial-stars {
+    color: #facc15;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+  }
+
+  .testimonial-quote {
+    font-style: italic;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #e5e7eb;
+  }
+
+  .testimonial-name {
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .testimonial-meta {
+    color: #9ca3af;
+    font-size: 0.8rem;
+  }
+
+  /* Navigation Buttons */
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0.25em 0.4em;
+    border-radius: 50%;
+    transition: background 0.3s;
+  }
+
+  .nav-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .nav-btn.prev {
+    left: 10px;
+  }
+
+  .nav-btn.next {
+    right: 10px;
+  }
+
+  /* Dots */
+  .dots {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #888;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .dots button.active {
+    background: #facc15;
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-review {
+      flex: 0 0 100%;
+    }
+  }
+    </style>
 </head>
  <body class="is-preload" id="top">
   <!-- Wrapper -->
@@ -419,52 +587,7 @@ gtag('config', 'G-1NRK79NW04');
        </div>
       </div>
      </article>
-     <style>
-      /* Keeps video neatly inside its frame */
-.youtube {
-  position: relative;
-  width: 90%;
-  max-width: 800px;       /* optional: limits max size */
-  aspect-ratio: 16 / 9;   /* prevents height jumps */
-  margin: 1rem auto;
-  background-color: #000;
-  background-position: center;
-  background-size: cover;
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-/* Thumbnail play button */
-.youtube .play-button {
-  width: 68px;
-  height: 48px;
-  background: url('https://img.icons8.com/ios-filled/100/ffffff/play--v1.png') no-repeat center;
-  background-size: contain;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.85;
-  transition: opacity 0.3s;
-  z-index: 2;
-}
-
-.youtube:hover .play-button {
-  opacity: 1;
-}
-
-/* Ensure iframe fills container and stays put */
-.youtube iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  border-radius: 8px;
-  z-index: 1;
-}
-     </style>
+     
      <script>
       document.addEventListener("DOMContentLoaded", function() {
   const ytDivs = document.querySelectorAll(".youtube");
@@ -506,7 +629,8 @@ gtag('config', 'G-1NRK79NW04');
       <img alt="Finest brand professional hair products" class="image fit" src="../Kenra.jpg"/>
       <img alt="A Best Rated Hair Salon in Rochester MN" class="image fit" loading="lazy" src="../images/studio.webp"/>
     
-    </section>
+    </div>
+</section>
    </div>
    <section class="testimonial-section">
     <div class="testimonial-carousel">
@@ -547,6 +671,7 @@ gtag('config', 'G-1NRK79NW04');
        <div class="testimonial-review">
         <div class="testimonial-stars">
          ★★★★★
+
         </div>
         <div class="testimonial-quote">
          “I’ve been going to Jess since I moved here in 2007 and I have never been disappointed. She really knows color and the salon’s very professional and fun.”
@@ -608,128 +733,7 @@ gtag('config', 'G-1NRK79NW04');
      <div class="dots">
      </div>
     </div>
-    <style>
-     .testimonial-section {
-    background: transparent;
-    color: #fff;
-    padding: 4rem 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    position: relative;
-  }
-
-  .testimonial-heading {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 2.5rem;
-  }
-
-  .testimonial-carousel {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .testimonial-track-wrapper {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .testimonial-track {
-    display: flex;
-    transition: transform 1s ease-in-out;
-    will-change: transform;
-  }
-
-  .testimonial-review {
-    flex: 0 0 calc(100% / 3);
-    box-sizing: border-box;
-    padding: 1.5rem;
-    text-align: center;
-    color: #d1d5db;
-  }
-
-  .testimonial-stars {
-    color: #facc15;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    margin-bottom: 0.75rem;
-  }
-
-  .testimonial-quote {
-    font-style: italic;
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #e5e7eb;
-  }
-
-  .testimonial-name {
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .testimonial-meta {
-    color: #9ca3af;
-    font-size: 0.8rem;
-  }
-
-  /* Navigation Buttons */
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.15);
-    color: #fff;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 2;
-    padding: 0.25em 0.4em;
-    border-radius: 50%;
-    transition: background 0.3s;
-  }
-
-  .nav-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-  }
-
-  .nav-btn.prev {
-    left: 10px;
-  }
-
-  .nav-btn.next {
-    right: 10px;
-  }
-
-  /* Dots */
-  .dots {
-    text-align: center;
-    margin-top: 1rem;
-  }
-
-  .dots button {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: none;
-    background: #888;
-    margin: 0 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  .dots button.active {
-    background: #facc15;
-  }
-
-  @media (max-width: 768px) {
-    .testimonial-review {
-      flex: 0 0 100%;
-    }
-  }
-    </style>
+    
     <script>
      (function () {
     const track = document.querySelector(".testimonial-track");
@@ -919,7 +923,7 @@ var sc_security="9b3823b9";
     </script>
     <script defer="" src="../js/bootstrap-4.4.1.js">
     </script>
-   </section>
+   
   </div>
  </body>
 </html>
