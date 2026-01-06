@@ -4830,24 +4830,4 @@ html {
   #wrapper .review-icon-bar img[src*="Yellowpages"],
   #wrapper .review-icon-bar img[src*="YP"] { height: 34px; }
 }
-.phone-icon {
-  display: block;          /* makes margin work properly */
-  margin-bottom: 30px;     /* default space below the icon */
-  width: 60px;             /* optional: control icon size */
-  height: auto;
-}
 
-.service-link {
-  text-align: center;      /* keeps text centered under the icon */
-  padding: 0 10px;         /* optional: small horizontal padding */
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-  .phone-icon {
-    margin-bottom: 50px;   /* more space on mobile screens */
-  }
-  .service-link p {
-    font-size: 18px;       /* slightly larger text for readability */
-  }
-}
