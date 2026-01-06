@@ -133,7 +133,7 @@ input, select, textarea {
     font-size: 22px;
     max-width: 100rem;
     color: #0C0C0D;
-    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
     text-transform: capitalize;
 		}
 .is-preload .embed-responsive-item .embed-responsive.embed-responsive {
@@ -4830,4 +4830,3 @@ html {
   #wrapper .review-icon-bar img[src*="Yellowpages"],
   #wrapper .review-icon-bar img[src*="YP"] { height: 34px; }
 }
-
