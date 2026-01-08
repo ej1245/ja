@@ -4830,3 +4830,8 @@ html {
   #wrapper .review-icon-bar img[src*="Yellowpages"],
   #wrapper .review-icon-bar img[src*="YP"] { height: 34px; }
 }
+@font-face {
+  font-family: 'Aboreto';
+  src: url('/fonts/Aboreto-Regular.woff2') format('woff2');
+  font-display: swap;
+}
