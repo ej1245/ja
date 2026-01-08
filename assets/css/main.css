@@ -133,7 +133,7 @@ input, select, textarea {
     font-size: 22px;
     max-width: 100rem;
     color: #0C0C0D;
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-family: Raleway;
     text-transform: capitalize;
 		}
 .is-preload .embed-responsive-item .embed-responsive.embed-responsive {
@@ -183,6 +183,7 @@ input, select, textarea {
     line-height: 2.375;
     font-style: normal;
     text-align: center;
+    color: #000000;
 	}
 
 	a {
