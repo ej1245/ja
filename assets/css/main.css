@@ -6,6 +6,12 @@
 #footer {
   margin-top: 40px;
 }
+@font-face {
+  font-family: 'Aboreto';
+  src: url('/fonts/Aboreto-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
 .h3-like-p {
   font-size: 24px;
   font-weight: normal;
@@ -177,7 +183,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-    font-family: "Aboreto Regular";
+    font-family: "Aboreto', serif";
     font-weight: 300;
     font-size: 1rem;
     line-height: 2.375;
@@ -3373,7 +3379,7 @@ input, select, textarea {
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
     color: #ffffff;
-    font-family: "Aboreto Regular";
+    font-family: "Aboreto', serif";
     font-style: normal;
     font-size: 3.2rem;
     line-height: 1.1;
@@ -3432,7 +3438,7 @@ input, select, textarea {
 		#intro h1 {
     font-size: 50px;
     line-height: 1;
-    font-family: "Aboreto Regular";
+    font-family: "Aboreto', serif";
     font-style: normal;
     font-weight: normal;
 		}
@@ -3442,7 +3448,7 @@ input, select, textarea {
     font-style: normal;
     margin-top: -0.25rem;
     text-align: center;
-    font-family: "Aboreto Regular";
+    font-family: "Aboreto', serif";
     text-transform: none;
 		}
 
@@ -3590,7 +3596,7 @@ input, select, textarea {
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
     color: #ffffff;
-    font-family: "Aboreto Regular";
+    font-family: "Aboreto', serif";
 		}
 
 		#header blockquote {
@@ -3843,7 +3849,7 @@ input, select, textarea {
     font-size: x-large;
     line-height: 1.8;
     margin: 0 0 2rem 0;
-    font-family: "Aboreto Regular";
+    font-family: "Aboreto', serif";
     text-decoration: none;
     font-variant: normal;
     font-style: normal;
@@ -4834,4 +4840,8 @@ html {
   font-family: 'Aboreto';
   src: url('/fonts/Aboreto-Regular.woff2') format('woff2');
   font-display: swap;
+  size-adjust: 110%;
+  ascent-override: 90%;
+  descent-override: 10%;
 }
+
