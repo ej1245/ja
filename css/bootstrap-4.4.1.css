@@ -55,12 +55,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
     margin: 0;
-    font-size: small;
-    font-weight: 400;
+    font-size: medium;
+    font-weight: 500;
     line-height: 3;
     color: #212529;
     text-align: left;
     background-color: #fff;
+    font-family: "Aboreto Regular";
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
