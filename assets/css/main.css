@@ -4859,16 +4859,3 @@ html {
 #gallery-carousel .carousel-item img {
   object-fit: contain;
 }
-/* ===== Ensure carousel navigation arrows stay visible ===== */
-#gallery-carousel .carousel-control-prev,
-#gallery-carousel .carousel-control-next {
-  opacity: 1 !important;
-  z-index: 5;
-}
-
-#gallery-carousel .carousel-item {
-  position: relative;
-}
-#gallery-carousel.carousel-fade .carousel-item {
-  opacity: 1 !important;
-}
