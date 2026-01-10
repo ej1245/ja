@@ -4836,3 +4836,26 @@ html {
   src: url('/fonts/Aboreto-Regular.woff2') format('woff2');
   font-display: swap;
 }
+/* ===== Mobile-friendly gallery carousel sizing (tuned) ===== */
+@media (max-width: 768px) {
+  #gallery-carousel .carousel-inner {
+    max-height: 75vh;   /* bigger, more immersive */
+    overflow: hidden;
+  }
+
+  #gallery-carousel .carousel-item img {
+    max-height: 75vh;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #gallery-carousel .carousel-inner,
+  #gallery-carousel .carousel-item img {
+    max-height: 70vh;
+  }
+}
+#gallery-carousel .carousel-item img {
+  object-fit: contain;
+}
