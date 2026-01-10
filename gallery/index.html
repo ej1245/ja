@@ -21,6 +21,17 @@
   <noscript><link rel="stylesheet" href="../assets/css/noscript.css"></noscript>
 
   <style>
+	  /* This makes the white Bootstrap 4 arrows visible on your white background */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1) grayscale(100) brightness(0);
+}
+
+/* Optional: Adds a subtle background so they are easier to see on mobile */
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
     /* Ensure carousel images stay responsive */
     .carousel-item img {
       max-width: 100%;
