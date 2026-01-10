@@ -4837,7 +4837,10 @@ html {
   font-display: swap;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of f309b37 (Revert "fix slideshow fade")
 /* ===== Mobile-friendly gallery carousel sizing (tuned) ===== */
 @media (max-width: 768px) {
   #gallery-carousel .carousel-inner {
@@ -4861,4 +4864,7 @@ html {
 #gallery-carousel .carousel-item img {
   object-fit: contain;
 }
+<<<<<<< HEAD
 >>>>>>> parent of 90b0b12 (8yo)
+=======
+>>>>>>> parent of f309b37 (Revert "fix slideshow fade")
